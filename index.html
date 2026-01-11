@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -355,7 +356,7 @@
     .case__image {
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
     }
 
     .case__label {
@@ -402,7 +403,7 @@
       color: var(--black);
       border-radius: 10px;
       padding: 18px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
       border: 1px solid #e0e0e0;
     }
 
@@ -437,7 +438,7 @@
       padding: 10px 16px;
       font-size: 14px;
       text-align: center;
-      background: radial-gradient(circle at top left, rgba(229,57,53,0.25), transparent 60%);
+      background: radial-gradient(circle at top left, rgba(229, 57, 53, 0.25), transparent 60%);
     }
 
     /* CTA banner */
@@ -455,8 +456,51 @@
 
     .cta-banner__text {
       font-size: 14px;
-      color: rgba(255,255,255,0.88);
+      color: rgba(255, 255, 255, 0.88);
       margin-bottom: 18px;
+    }
+
+    .contact-form {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 8px;
+      border: 1px solid #2c2e3a;
+      background-color: var(--black-soft);
+      color: var(--white);
+      font-size: 15px;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: var(--gray);
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: var(--accent-blue);
+      box-shadow: 0 0 0 2px rgba(41, 121, 255, 0.25);
+    }
+
+    .contact-form button {
+      width: fit-content;
+      padding: 12px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
     }
 
     /* Footer */
@@ -524,7 +568,10 @@
       font-size: 14px;
     }
 
-    .contact-form { position: relative; z-index: 10000; }
+    .contact-form {
+      position: relative;
+      z-index: 10000;
+    }
 
     /* Responsive */
 
@@ -564,7 +611,8 @@
       }
 
       .nav__links {
-        display: none; /* Simple mobile behavior; could be replaced with a real menu */
+        display: none;
+        /* Simple mobile behavior; could be replaced with a real menu */
       }
 
       .hero {
@@ -596,6 +644,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="page">
 
@@ -604,7 +653,7 @@
       <div class="header__inner">
         <a href="#" class="logo">
           <div class="logo__mark"></div>
-          <div class="logo__text">YourBrand</div>
+          <div class="logo__text">Machine25</div>
         </a>
         <nav class="nav">
           <div class="nav__links">
@@ -624,7 +673,8 @@
           <div class="hero__eyebrow">Software development for ambitious companies</div>
           <h1 class="hero__title">We build software that drives business growth.</h1>
           <p class="hero__subtitle">
-            Machine25, high‑quality engineering for teams that need speed, reliability, and solutions that scale with the business.
+            Machine25, high‑quality engineering for teams that need speed, reliability, and solutions that scale with
+            the business.
           </p>
           <p class="hero__meta">
             Partnering with teams across AI, cloud, and more.
@@ -687,7 +737,8 @@
               <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <rect width="32" height="32" rx="8" fill="#ff8f00" />
                 <rect x="9" y="18" width="14" height="2" rx="1" fill="#ffffff" />
-                <path d="M12 18V14C12 12 13 10 16 10C19 10 20 12 20 14V18" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" />
+                <path d="M12 18V14C12 12 13 10 16 10C19 10 20 12 20 14V18" stroke="#ffffff" stroke-width="1.4"
+                  stroke-linecap="round" />
               </svg>
             </div>
             <h3 class="service-card__title">Automation</h3>
@@ -700,8 +751,10 @@
             <div class="service-card__icon">
               <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <rect width="32" height="32" rx="8" fill="#0b0c10" />
-                <path d="M10 20C10 16.7 12.7 14 16 14C19.3 14 22 16.7 22 20" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" />
-                <path d="M13 13C13 11.3 14.3 10 16 10C17.7 10 19 11.3 19 13" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" />
+                <path d="M10 20C10 16.7 12.7 14 16 14C19.3 14 22 16.7 22 20" stroke="#ffffff" stroke-width="1.4"
+                  stroke-linecap="round" />
+                <path d="M13 13C13 11.3 14.3 10 16 10C17.7 10 19 11.3 19 13" stroke="#ffffff" stroke-width="1.4"
+                  stroke-linecap="round" />
               </svg>
             </div>
             <h3 class="service-card__title">Distributed cloud Solutions</h3>
@@ -741,15 +794,15 @@
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
           </div>
-        
+
           <input type="text" name="subject" placeholder="Subject" required>
-        
+
           <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-        
+
           <button type="submit" class="btn btn--primary">Send Message</button>
         </form>
-        
-	  </div>
+
+      </div>
     </section>
 
     <!-- Footer -->
@@ -761,7 +814,8 @@
             <div class="logo__text">Machine25</div>
           </div>
           <p>
-            We build custom software solutions that move businesses forward — from first concept to production and beyond.
+            We build custom software solutions that move businesses forward — from first concept to production and
+            beyond.
           </p>
         </div>
         <div>
@@ -791,4 +845,5 @@
 
   </div>
 </body>
+
 </html>
