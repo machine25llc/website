@@ -1,0 +1,236 @@
+/* -----------------------------------
+   MACHINE25 — GLOBAL THEME
+----------------------------------- */
+
+:root {
+  --blue: #2979FF;
+  --red: #E53935;
+  --black: #0B0C10;
+  --black-soft: #15161D;
+  --white: #FFFFFF;
+  --gray: #9EA3B0;
+  --gray-light: #F5F6FA;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+/* -----------------------------------
+   HEADER
+----------------------------------- */
+
+header {
+  background-color: var(--white);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 40px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 600;
+}
+
+nav .btn {
+  margin-left: 20px;
+}
+
+/* -----------------------------------
+   BUTTONS
+----------------------------------- */
+
+.btn {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #1565C0;
+}
+
+.btn-red {
+  background-color: var(--red);
+}
+
+.btn-red:hover {
+  background-color: #B71C1C;
+}
+
+/* -----------------------------------
+   HERO SECTION
+----------------------------------- */
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: var(--black);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 18px;
+  color: var(--gray);
+  margin-bottom: 30px;
+}
+
+.hero .cta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* -----------------------------------
+   SECTIONS
+----------------------------------- */
+
+.section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* -----------------------------------
+   TESTIMONIALS
+----------------------------------- */
+
+.testimonial {
+  background-color: var(--black-soft);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #22232d;
+}
+
+/* -----------------------------------
+   CASE STUDIES
+----------------------------------- */
+
+.case-study {
+  background-color: var(--black-soft);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #22232d;
+}
+
+/* -----------------------------------
+   SERVICES
+----------------------------------- */
+
+.service {
+  background-color: var(--black-soft);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #22232d;
+}
+
+/* -----------------------------------
+   CONTACT FORM
+----------------------------------- */
+
+.contact-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid #2c2e3a;
+  background-color: var(--black-soft);
+  color: var(--white);
+  font-size: 15px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--gray);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 2px rgba(41,121,255,0.25);
+}
+
+/* -----------------------------------
+   FOOTER
+----------------------------------- */
+
+footer {
+  background-color: var(--black);
+  color: var(--gray);
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid #22232d;
+}
+
+footer img {
+  height: 32px;
+  margin-bottom: 10px;
+}
+
+/* -----------------------------------
+   RESPONSIVE
+----------------------------------- */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 0 8px;
+  }
+}
+
