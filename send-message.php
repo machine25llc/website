@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $subject = htmlspecialchars($_POST["subject"]);
     $message = htmlspecialchars($_POST["message"]);
 
-    $to = "contact@machine25.com";
+    $to = "machine25llc@proton.me";
     $headers = "From: $email\r\nReply-To: $email\r\n";
     header .= "CC: ".$email."\r\n";
 
